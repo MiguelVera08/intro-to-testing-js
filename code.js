@@ -4,5 +4,13 @@ const helloWorld = function() {
 };
 
 const sayHello = function(input) {
-    return "Hello, " + input + "!";
+    if(input === undefined || typeof input === "boolean" || input === null) {
+        return "Hello, World!"
+    }else if(typeof input === "number" || !isNaN(input)) {
+        return "Hello, World!"
+    }else if(typeof input === "object" || typeof input === "function"){
+        return "Hello, World!"
+    }else{
+        return "Hello, " + input + "!";
+    }
 };
