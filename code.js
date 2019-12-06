@@ -14,3 +14,11 @@ const sayHello = function(input) {
         return "Hello, " + input + "!";
     }
 };
+
+function isEven(num) {
+    return parseFloat(num) % 2 === 0;
+}
+
+
+
+
